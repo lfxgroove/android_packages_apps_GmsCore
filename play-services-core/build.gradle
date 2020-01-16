@@ -45,6 +45,7 @@ dependencies {
     implementation project(':play-services-api')
     implementation project(':play-services-cast-api')
     implementation project(':play-services-wearable')
+    implementation project(':play-services-vision')
     implementation project(':unifiednlp-base')
     implementation project(':wearable-lib')
 
