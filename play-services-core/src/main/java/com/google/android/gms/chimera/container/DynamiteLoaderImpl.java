@@ -66,6 +66,10 @@ public class DynamiteLoaderImpl extends IDynamiteLoader.Stub {
             Log.d(TAG, "returning temp fix module version for " + moduleId + ". Cast API wil not be functional!");
             return 1;
         }
+        final String firebaseBarcodeModuleId = com.google.android.gms.dynamite.descriptors.com.google.android.gms.vision.dynamite.barcode.ModuleDescriptor.MODULE_ID;
+        if (firebaseBarcodeModuleId.equals(moduleId)) {
+            return com.google.android.gms.dynamite.descriptors.com.google.android.gms.vision.dynamite.barcode.ModuleDescriptor.MODULE_VERSION;
+        }
         Log.d(TAG, "unimplemented Method: getModuleVersion for " + moduleId);
         return 0;
     }
